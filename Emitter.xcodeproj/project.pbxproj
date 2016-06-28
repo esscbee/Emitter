@@ -23,6 +23,7 @@
 		D6C20A071D22F6D300F329F2 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C20A061D22F6D300F329F2 /* Fire.sks */; };
 		D6C53DC21D22F8FC0080258C /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C53DC01D22F8FC0080258C /* Bokeh.sks */; };
 		D6C53DC31D22F8FC0080258C /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C53DC11D22F8FC0080258C /* bokeh.png */; };
+		D6C53DC51D22FD040080258C /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C53DC41D22FD040080258C /* Snow.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		D6C20A061D22F6D300F329F2 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
 		D6C53DC01D22F8FC0080258C /* Bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bokeh.sks; sourceTree = "<group>"; };
 		D6C53DC11D22F8FC0080258C /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		D6C53DC41D22FD040080258C /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +126,6 @@
 				D6C209D61D22E92100F329F2 /* Assets.xcassets */,
 				D6C209D81D22E92100F329F2 /* LaunchScreen.storyboard */,
 				D6C209DB1D22E92100F329F2 /* Info.plist */,
-				D6C209FD1D22ED0500F329F2 /* reactor.scnp */,
-				D6C209FE1D22ED0500F329F2 /* spark.png */,
 			);
 			path = Emitter;
 			sourceTree = "<group>";
@@ -151,11 +151,14 @@
 		D6C20A051D22F6A900F329F2 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				D6C20A011D22F06000F329F2 /* Rain.sks */,
-				D6C20A031D22F10100F329F2 /* Magic.sks */,
-				D6C20A061D22F6D300F329F2 /* Fire.sks */,
-				D6C53DC01D22F8FC0080258C /* Bokeh.sks */,
 				D6C53DC11D22F8FC0080258C /* bokeh.png */,
+				D6C53DC01D22F8FC0080258C /* Bokeh.sks */,
+				D6C20A061D22F6D300F329F2 /* Fire.sks */,
+				D6C20A031D22F10100F329F2 /* Magic.sks */,
+				D6C20A011D22F06000F329F2 /* Rain.sks */,
+				D6C209FD1D22ED0500F329F2 /* reactor.scnp */,
+				D6C209FE1D22ED0500F329F2 /* spark.png */,
+				D6C53DC41D22FD040080258C /* Snow.sks */,
 			);
 			name = Particles;
 			path = Emitter;
@@ -271,6 +274,7 @@
 				D6C20A001D22ED0500F329F2 /* spark.png in Resources */,
 				D6C20A021D22F06000F329F2 /* Rain.sks in Resources */,
 				D6C20A071D22F6D300F329F2 /* Fire.sks in Resources */,
+				D6C53DC51D22FD040080258C /* Snow.sks in Resources */,
 				D6C209DA1D22E92100F329F2 /* LaunchScreen.storyboard in Resources */,
 				D6C209FF1D22ED0500F329F2 /* reactor.scnp in Resources */,
 				D6C209D71D22E92100F329F2 /* Assets.xcassets in Resources */,

@@ -74,7 +74,7 @@ class GameScene: SKScene {
             sprite.runAction(SKAction.repeatActionForever(action))
             maybeNode = sprite
         } else {
-            let particles = ["Rain", "Magic", "Fire", "Bokeh"]
+            let particles = ["Rain", "Magic", "Fire", "Bokeh", "Snow"]
             let idx = random() % particles.count
             let particle = particles[idx]
             let path = NSBundle.mainBundle().pathForResource(particle, ofType: "sks")
