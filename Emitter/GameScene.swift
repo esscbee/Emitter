@@ -34,9 +34,22 @@ class GameScene: SKScene {
             
             var found = false
             for c in self.children {
-                if(CGRectContainsPoint(c.frame, location)) {
+                var frame = c.frame
+                if frame.width == 0 || frame.height == 0 {
+                    if let emitter = c as? SKEmitterNode {
+                        if false {
+                            let ppr = emitter.particlePositionRange
+                            frame.size.width = frame.origin.x - ppr.dx
+                            frame.size.height = frame.origin.y - ppr.dy
+                        } else {
+                            frame = emitter.calculateAccumulatedFrame()
+                        }
+                    }
+                }
+                if(CGRectContainsPoint(frame, location)) {
                     toDelete.append(c)
                     found = true
+                    print("Deleting \(c)")
                 }
             }
             if found {
@@ -48,17 +61,33 @@ class GameScene: SKScene {
         self.removeChildrenInArray(toDelete)
     }
     func addNodeAt(location : CGPoint) {
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
         
-        sprite.xScale = 0.5
-        sprite.yScale = 0.5
-        sprite.position = location
         
-        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+        var maybeNode : SKNode?
+            
+        if false {
+            
+            let sprite = SKSpriteNode(imageNamed:"Spaceship")
+            sprite.xScale = 0.5
+            sprite.yScale = 0.5
+            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+            sprite.runAction(SKAction.repeatActionForever(action))
+            maybeNode = sprite
+        } else {
+            let particles = ["Rain", "Magic", "Fire", "Bokeh"]
+            let idx = random() % particles.count
+            let particle = particles[idx]
+            let path = NSBundle.mainBundle().pathForResource(particle, ofType: "sks")
+            let emitter = NSKeyedUnarchiver.unarchiveObjectWithFile(path!) as! SKEmitterNode
+
+//            print(emitter)
+            maybeNode = emitter
+        }
         
-        sprite.runAction(SKAction.repeatActionForever(action))
-        
-        self.addChild(sprite)
+        if let sprite = maybeNode {
+            sprite.position = location
+            self.addChild(sprite)
+        }
         
     }
     override func update(currentTime: CFTimeInterval) {

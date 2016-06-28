@@ -16,6 +16,13 @@
 		D6C209DA1D22E92100F329F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C209D81D22E92100F329F2 /* LaunchScreen.storyboard */; };
 		D6C209E51D22E92100F329F2 /* EmitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C209E41D22E92100F329F2 /* EmitterTests.swift */; };
 		D6C209F01D22E92100F329F2 /* EmitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C209EF1D22E92100F329F2 /* EmitterUITests.swift */; };
+		D6C209FF1D22ED0500F329F2 /* reactor.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D6C209FD1D22ED0500F329F2 /* reactor.scnp */; };
+		D6C20A001D22ED0500F329F2 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C209FE1D22ED0500F329F2 /* spark.png */; };
+		D6C20A021D22F06000F329F2 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C20A011D22F06000F329F2 /* Rain.sks */; };
+		D6C20A041D22F10100F329F2 /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C20A031D22F10100F329F2 /* Magic.sks */; };
+		D6C20A071D22F6D300F329F2 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C20A061D22F6D300F329F2 /* Fire.sks */; };
+		D6C53DC21D22F8FC0080258C /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6C53DC01D22F8FC0080258C /* Bokeh.sks */; };
+		D6C53DC31D22F8FC0080258C /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C53DC11D22F8FC0080258C /* bokeh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		D6C209EB1D22E92100F329F2 /* EmitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C209EF1D22E92100F329F2 /* EmitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterUITests.swift; sourceTree = "<group>"; };
 		D6C209F11D22E92100F329F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C209FD1D22ED0500F329F2 /* reactor.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = reactor.scnp; sourceTree = "<group>"; };
+		D6C209FE1D22ED0500F329F2 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D6C20A011D22F06000F329F2 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		D6C20A031D22F10100F329F2 /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
+		D6C20A061D22F6D300F329F2 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		D6C53DC01D22F8FC0080258C /* Bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bokeh.sks; sourceTree = "<group>"; };
+		D6C53DC11D22F8FC0080258C /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		D6C209BF1D22E92100F329F2 = {
 			isa = PBXGroup;
 			children = (
+				D6C20A051D22F6A900F329F2 /* Particles */,
 				D6C209CA1D22E92100F329F2 /* Emitter */,
 				D6C209E31D22E92100F329F2 /* EmitterTests */,
 				D6C209EE1D22E92100F329F2 /* EmitterUITests */,
@@ -109,6 +124,8 @@
 				D6C209D61D22E92100F329F2 /* Assets.xcassets */,
 				D6C209D81D22E92100F329F2 /* LaunchScreen.storyboard */,
 				D6C209DB1D22E92100F329F2 /* Info.plist */,
+				D6C209FD1D22ED0500F329F2 /* reactor.scnp */,
+				D6C209FE1D22ED0500F329F2 /* spark.png */,
 			);
 			path = Emitter;
 			sourceTree = "<group>";
@@ -129,6 +146,19 @@
 				D6C209F11D22E92100F329F2 /* Info.plist */,
 			);
 			path = EmitterUITests;
+			sourceTree = "<group>";
+		};
+		D6C20A051D22F6A900F329F2 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				D6C20A011D22F06000F329F2 /* Rain.sks */,
+				D6C20A031D22F10100F329F2 /* Magic.sks */,
+				D6C20A061D22F6D300F329F2 /* Fire.sks */,
+				D6C53DC01D22F8FC0080258C /* Bokeh.sks */,
+				D6C53DC11D22F8FC0080258C /* bokeh.png */,
+			);
+			name = Particles;
+			path = Emitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C209CE1D22E92100F329F2 /* GameScene.sks in Resources */,
+				D6C53DC21D22F8FC0080258C /* Bokeh.sks in Resources */,
+				D6C20A041D22F10100F329F2 /* Magic.sks in Resources */,
+				D6C20A001D22ED0500F329F2 /* spark.png in Resources */,
+				D6C20A021D22F06000F329F2 /* Rain.sks in Resources */,
+				D6C20A071D22F6D300F329F2 /* Fire.sks in Resources */,
 				D6C209DA1D22E92100F329F2 /* LaunchScreen.storyboard in Resources */,
+				D6C209FF1D22ED0500F329F2 /* reactor.scnp in Resources */,
 				D6C209D71D22E92100F329F2 /* Assets.xcassets in Resources */,
 				D6C209D51D22E92100F329F2 /* Main.storyboard in Resources */,
+				D6C53DC31D22F8FC0080258C /* bokeh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +531,7 @@
 				D6C209F61D22E92100F329F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6C209F71D22E92100F329F2 /* Build configuration list for PBXNativeTarget "EmitterTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +540,7 @@
 				D6C209F91D22E92100F329F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6C209FA1D22E92100F329F2 /* Build configuration list for PBXNativeTarget "EmitterUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +549,7 @@
 				D6C209FC1D22E92100F329F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
